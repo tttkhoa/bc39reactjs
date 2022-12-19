@@ -5,7 +5,9 @@ import './App.css';
 // import HandlingEvents from './handling-events';
 // import State from './state';
 // import RenderColorCar from './renderColorCar';
-import ListKeys from './list-keys';
+// import ListKeys from './list-keys';
+import Communicate from './communicate';
+import Shoes from './shoes';
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
       {/* <HandlingEvents/> */}
       {/* <State/>
       <RenderColorCar/> */}
-      <ListKeys/>
+      {/* <ListKeys/> */}
+      <Communicate/>
+      <hr/>
+      <Shoes />
     </div>
   );
 }
