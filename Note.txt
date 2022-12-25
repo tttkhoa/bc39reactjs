@@ -13,3 +13,12 @@
     - Communicate: giao tiếp các component
         + Props: truyền data từ component cha => component con
         + Lifting State Up: truyền data từ component con => component cha
+
+======== Buổi 4 ========
+    - Các bước thức hiện khi làm 1 task hoặc 1 chức năng Reactjs
+        + B1: chia component (Dàn layout)
+        + B2: xác định state (phần dữ liệu thay đổi trên giao diện mà người dùng thao tác): string,boolean,number,array,object?
+        Đặt state giỏ hàng ở component nào? 
+        -> 
+        + B3: binding state lên giao diện
+        + B4 : xử lý thay đổi state (setState) thông qua sự kiện

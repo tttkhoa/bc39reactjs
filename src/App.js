@@ -6,8 +6,9 @@ import './App.css';
 // import State from './state';
 // import RenderColorCar from './renderColorCar';
 // import ListKeys from './list-keys';
-import Communicate from './communicate';
-import Shoes from './shoes';
+// import Communicate from './communicate';
+// import Shoes from './shoes';
+import CartDemo from './CartDemo/CartDemo';
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
       {/* <State/>
       <RenderColorCar/> */}
       {/* <ListKeys/> */}
-      <Communicate/>
-      <hr/>
-      <Shoes />
+      {/* <Communicate/>
+      <Shoes /> */}
+      <CartDemo />
     </div>
   );
 }
