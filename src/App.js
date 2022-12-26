@@ -8,7 +8,8 @@ import './App.css';
 // import ListKeys from './list-keys';
 // import Communicate from './communicate';
 // import Shoes from './shoes';
-import CartDemo from './CartDemo/CartDemo';
+// import CartDemo from './CartDemo/CartDemo';
+import Home from './user-management';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       {/* <ListKeys/> */}
       {/* <Communicate/>
       <Shoes /> */}
-      <CartDemo />
+      {/* <CartDemo /> */}
+      <Home />
     </div>
   );
 }

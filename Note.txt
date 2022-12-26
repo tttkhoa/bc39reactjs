@@ -22,3 +22,7 @@
         -> 
         + B3: binding state lên giao diện
         + B4 : xử lý thay đổi state (setState) thông qua sự kiện
+
+======== Buổi 5 ========
+    - User management
+    - Form
