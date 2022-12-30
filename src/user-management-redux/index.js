@@ -101,7 +101,7 @@ class Home extends Component {
           </button>
         </div>
         <Users
-          userList={userList}  
+          // userList={userList}
           getUserDelete={this.handleDelete}
           getUserEdit={this.handleEdit}
         />

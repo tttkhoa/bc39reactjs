@@ -9,7 +9,9 @@ import './App.css';
 // import Communicate from './communicate';
 // import Shoes from './shoes';
 // import CartDemo from './CartDemo/CartDemo';
-import Home from './user-management';
+// import Home from './user-management';
+
+import HomeRedux from "./user-management-redux";
 
 function App() {
   return (
@@ -24,7 +26,8 @@ function App() {
       {/* <Communicate/>
       <Shoes /> */}
       {/* <CartDemo /> */}
-      <Home />
+      {/* <Home /> */}
+      <HomeRedux />
     </div>
   );
 }

@@ -27,3 +27,7 @@
 ======== Buổi 5 ========
     - User management
     - Form
+
+ ======== Buổi 6 ========
+- User management
+ - Redux
