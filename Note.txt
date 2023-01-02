@@ -30,4 +30,8 @@
 
  ======== Buổi 6 ========
 - User management
- - Redux
+- Redux
+
+ ======== Buổi 7 ========
+- User management Redux
+

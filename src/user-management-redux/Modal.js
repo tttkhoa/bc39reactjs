@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { actSubmitUser } from "../redux/reducers/user/action";
 
 class Modal extends Component {
   constructor(props) {
@@ -36,7 +38,7 @@ class Modal extends Component {
   handleSubmit = (event) => {
     //Chặn load lại trang web
     event.preventDefault();
-    this.props.getUserSubmit(this.state);
+    this.props.submitUser(this.state);
     //Close modal
     this.closeModal.current.click();
   };
@@ -62,7 +64,7 @@ class Modal extends Component {
         email: "",
         phoneNumber: "",
         type: "USER",
-      })
+      });
     }
   }
 
@@ -80,7 +82,9 @@ class Modal extends Component {
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title">{this.props.userEdit ? "EDIT USER" : "ADD USER"} </h5>
+              <h5 className="modal-title">
+                {this.props.userEdit ? "EDIT USER" : "ADD USER"}{" "}
+              </h5>
               <button
                 type="button"
                 className="close"
@@ -157,4 +161,19 @@ class Modal extends Component {
   }
 }
 
-export default Modal;
+const mapStateToProps = (state) => {
+  return {
+    userEdit: state.userReducer.userEdit,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    submitUser: (user) => {
+      dispatch(actSubmitUser(user));
+    },
+  };
+};
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Modal);
